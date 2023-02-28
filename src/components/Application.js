@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import "components/Application.scss";
 import DayList from "./DayList";
 
@@ -21,7 +21,7 @@ const days = [
 ];
 
 export default function Application(props) {
-  const [day, setDay] = useState('Monday');
+  const [day, setDay] = useState("Monday");
 
   return (
     <main className="layout">
@@ -33,11 +33,7 @@ export default function Application(props) {
         />
         <hr className="sidebar__separator sidebar--centered" />
         <nav className="sidebar__menu">
-          <DayList
-            days={days}
-            day={day}
-            setDay={setDay}
-          />
+          <DayList days={days} day={day} setDay={setDay} />
         </nav>
         <img
           className="sidebar__lhl sidebar--centered"
@@ -51,3 +47,15 @@ export default function Application(props) {
     </main>
   );
 }
+
+
+/*
+To build our new components, we should follow the same steps as before.
+
+  - Create a file with our component name
+  - Create & Export the component function
+  - Add the base HTML in the return statement of our component
+  - Create & Import a CSS / SCSS file holding the style of our component
+  - Write stories for Storybook to render our component in isolation
+  - Refactor the hardcoded content to use props & state
+*/
