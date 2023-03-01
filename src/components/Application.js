@@ -48,7 +48,6 @@ export default function Application(props) {
   );
 }
 
-
 /*
 To build our new components, we should follow the same steps as before.
 
