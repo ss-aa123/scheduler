@@ -21,18 +21,18 @@ export default function Application(props) {
   function bookInterview(id, interview) {
     const appointment = {
       ...state.appointments[id],
-      interview: { ...interview },
+      interview: { ...interview }
     };
     const appointments = {
       ...state.appointments,
-      [id]: appointment,
+      [id]: appointment
     };
     return axios
       .put(`/api/appointments/${id}`, appointment)
       .then(() => setState({ ...state, appointments }));
   }
 
-  function cancelInterview(id, interview) {
+  function cancelInterview(id) {
     const appointment = {
       ...state.appointments[id],
       interview: null,

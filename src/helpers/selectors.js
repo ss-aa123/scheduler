@@ -15,8 +15,8 @@ export default function getAppointmentsForDay(state, day) {
 export function getInterview(state, interview) {
   const results = {};
   if (interview) {
-    results.student = interview.student;
-    results.interviewer = state.interviewers[interview.interviewer];
+    results["student"] = interview.student;
+    results["interviewer"] = state.interviewers[interview.interviewer];
   } else {
     return null;
   }
