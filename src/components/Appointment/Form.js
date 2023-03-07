@@ -64,26 +64,3 @@ export default function Form(props) {
   );
 }
 
-/*
-<Form> component should take the following props:
-
-student:String
-interviewers:Array
-interviewer:Number
-onSave:Function
-onCancel:Function
-
-As part of our Edit story, the <Form> component should take the following props:
-
-student:String
-interviewer:Number
-interviewers:Array
-onSave:Function
-onCancel:Function
-
-As part of our Create story, the <Form> component should take the following props:
-
-interviewers:Array
-onSave:Function
-onCancel:Function
-*/

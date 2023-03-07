@@ -19,7 +19,6 @@
     "storybook": "start-storybook -p 9009 -s public --ci",
     "build-storybook": "build-storybook -s public",
     "cypress": "cypress open -P ."
-
   },
   "browserslist": {
     "production": [
@@ -44,6 +43,7 @@
     "@testing-library/react": "^8.0.7",
     "@testing-library/react-hooks": "^8.0.1",
     "babel-loader": "8.1.0",
+    "cypress": "^12.7.0",
     "prop-types": "^15.8.1",
     "react-test-renderer": "^16.9.0",
     "sass": "^1.53.0"
@@ -51,8 +51,7 @@
   "jest": {
     "watchPathIgnorePatterns": [
       "<rootDir>/node_modules/",
-      "<rootDir>/.git/",
-      "<rootDir>/node_modules/(?!(axios)/)"
+      "<rootDir>/.git/"
     ]
   }
 }

@@ -20,14 +20,3 @@ export default function InterviewerListItem(props) {
   );
 }
 
-/*
-InterviewerListItem props
-  - id:number id of the interviewer
-  - name:string name of the interviewer
-  - avatar:url to an image of the interviewer
-
-  - selected:boolean determines if an interviewer is selected or not and displays the name and applies appropriate styles if selected.
-
-  - setInterviewer:function runs when <InterviewerListItem> is clicked. Receives interviewer's id as an argument. Sets the selected interviewer.
-  
-*/
